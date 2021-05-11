@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+<form action="/record" method="post">
+  <div class="form-group">
+    <h1>Record</h1>
+    <div class="row">
+      <div class="col">
+        <p>Control Document No.</p>
+        <input type="text" name="CDno">
+      </div>
+      <p>Import/Export</p>
+      <p>Description</p>
+      <p>Job No.</p>
+      <p>User/Division</p>
+      <p>PO No.</p>
+      <p>Shipper Invoice No.</p>
+      <p>Currency</p>
+      <p>Invoice Amount</p>
+      <p>Freight</p>
+      <p>Total</p>
+      <textarea name="composecontent" rows="8" cols="80"></textarea>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" name="button">Publish</button>
+</form>
+<%- include("partials/footer") -%>
